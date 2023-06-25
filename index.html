@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Adventure Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="game-container">
+    <div id="title">Text Adventure Game</div>
+    <div id="story-container">
+      <div id="story">You wake up in a mysterious forest. What do you do?</div>
+      <div id="choices">
+        <div class="choice-container">
+          <button class="choice" onclick="chooseOption(1)">Explore the forest</button>
+          <button class="choice" onclick="chooseOption(2)">Follow a path</button>
+          <button class="choice" onclick="chooseOption(3)">Climb a tree</button>
+        </div>
+      </div>
+    </div>
+    <div id="result"></div>
+    <div id="action-buttons">
+      <button id="restart-button" onclick="restartGame()">Restart</button>
+      <button id="end-button" onclick="endGame()">End Game</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #game-container {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #story-container {
+    position: relative;
+  }
+  
+  #story {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease;
+  }
+  
+  #choices {
+    margin: 20px;
+    animation: slide-up 1s ease;
+  }
+  
+  .choice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .choice {
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .choice:hover {
+    background-color: #0056b3;
+  }
+  
+  #result {
+    margin-bottom: 20px;
+    font-size: 18px;
+    animation: fade-in 1s ease;
+  }
+  
+  #action-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #restart-button,
+  #end-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #restart-button:hover,
+  #end-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(50px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #game-container {
+      margin-top: 50px;
+      padding: 10px;
+    }
+  
+    #title {
+      font-size: 20px;
+    }
+  
+    #story {
+      font-size: 16px;
+    }
+  
+    .choice {
+      margin: 5px auto;
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    #result {
+      font-size: 16px;
+    }
+  
+    #action-buttons {
+      margin-top: 10px;
+    }
+  
+    #restart-button,
+    #end-button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
